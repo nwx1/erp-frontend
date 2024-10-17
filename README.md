@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
 
+## About this Project
+This project will simulate the features and design from ERPNext,
+but some features will include custom made functionality that will resembles some part of ERPNext like HRMS
+and Payroll
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
