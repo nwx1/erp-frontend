@@ -1,0 +1,31 @@
+.top {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 320px;
+}
+
+.middle1 {
+    border: 2px solid #eee;
+    width: 50%;
+}
+
+.middle1 table {
+    width: 100%;
+}
+
+.middle2 {
+    border: 2px solid #eee;
+    width: 50%;
+}
+
+.middle-cont {
+    margin-top: 10px;
+}
+
+.chead {
+    font-size: 25px;
+}

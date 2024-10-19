@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand">ERP</a>
+
+        <!-- <button type="button" class="navbar-toggler" (click)="isOpen =! isOpen">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <!-- <div class="collapse navbar-collapse" [ngbCollapse]="isOpen"> -->
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/main">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [matMenuTriggerFor]="profile">Profile <i class="fa fa-caret-down"></i></a>
+
+                    <mat-menu #profile="matMenu">
+                        <button mat-menu-item>
+                            <i class="fa fa-circle-info"></i>&nbsp;
+                            About
+                        </button>
+                        <button mat-menu-item (click)="logout()">
+                            <i class="fa fa-power-off"></i>&nbsp;
+                            Logout
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        <!-- </div> -->
+    </div>
+</nav>
+<div class="side">
+    @for(menu of menu; track menu) {
+        <a routerLink="{{menu.ref}}" routerLinkActive="active">
+            <span>{{menu.name}}</span>
+        </a>
+    }
+</div>
+<div class="main">
+    <router-outlet />
+</div>

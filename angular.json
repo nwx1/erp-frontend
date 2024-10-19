@@ -34,6 +34,9 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
+              "@fortawesome/fontawesome-free/css/fontawesome.css",
+              "@fortawesome/fontawesome-free/css/solid.css",
+              "@fortawesome/fontawesome-free/css/brands.css",
               "src/styles.scss"
             ],
             "scripts": []

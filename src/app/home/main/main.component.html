@@ -1,0 +1,73 @@
+<div class="top">
+    <div class="card shadow p-3">
+        <div class="d-flex justify-content-between chead">
+            <p>0</p>
+            <p><i class="fa fa-sitemap"></i></p>
+        </div>
+        <div>
+            <p>Total Items Acquired</p>
+        </div>
+    </div>
+    <div class="card shadow p-3">
+        <div class="d-flex justify-content-between chead">
+            <p>0</p>
+            <p><i class="fa fa-truck"></i></p>
+        </div>
+        <div>
+            <p>Total Orders Acquired</p>
+        </div>
+    </div>
+    <div class="card shadow p-3">
+        <div class="d-flex justify-content-between chead">
+            <p>0</p>
+            <p><i class="fa fa-user"></i></p>
+        </div>
+        <div>
+            <p>Total Visited</p>
+        </div>
+    </div>
+    <div class="card shadow p-3">
+        <div class="d-flex justify-content-between chead">
+            <p>0</p>
+            <p><i class="fa fa-chart-line"></i></p>
+        </div>
+        <div>
+            <p>Ratings</p>
+        </div>
+    </div>
+</div>
+
+<div class="middle-cont d-flex">
+    <div class="middle1 p-3">
+        <h5>Company List</h5>
+    
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(comp of company; track comp) {
+                        <tr>
+                            <td>{{comp.name}}</td>
+                            <td>{{comp.desc}}</td>
+                            <td>{{comp.date}}</td>
+                            <td>{{comp.status}}</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="middle2 p-3">
+        <h5>Recent Order</h5>
+        <div>
+            <canvas id="chart">{{mychart}}</canvas>
+        </div>
+    </div>
+</div>

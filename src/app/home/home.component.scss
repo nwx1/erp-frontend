@@ -1,0 +1,42 @@
+.navbar {
+    background-color: green;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-item a {
+    color: white;
+    cursor: pointer;
+}
+
+.side {
+    background-color: lightgrey;
+    width: 160px;
+    height: 100%;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.side a {
+    display: block;
+    color: black;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.side a:hover {
+    background-color: #f1f1f1;
+}
+
+.active {
+    background-color: #f1f1f1;
+    border-right: 2px solid green;
+}
+
+.main {
+    padding: 10px 10px;
+    margin-left: 160px;
+}
